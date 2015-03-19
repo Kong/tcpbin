@@ -14,13 +14,13 @@ This project has been started to help testing TCP requests in a very easy way. I
 
 # EXAMPLES
 
-## $ echo "Text to send" | ncat 54.175.103.105 4444
+### $ echo "Text to send" | ncat 54.175.103.105 4444
 
 ```
 Text to send
 ```
 
-## $ echo "Get some info" | ncat 54.175.103.105 5555
+### $ echo "Get some info" | ncat 54.175.103.105 5555
 
 ```json
 {
