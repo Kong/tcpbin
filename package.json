@@ -4,9 +4,7 @@
     "description": "A simple TCP server that echoes whatever it receives",
     "author": "Mashape <support@mashape.com>",
     "homepage":"http://www.tcpbin.org",
-    "dependencies": {
-        "redis": "0.12.1"
-    },
+    "dependencies": {},
     "private": false,
     "engines": {
         "node": ">= 0.8.11"
