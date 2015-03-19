@@ -11,7 +11,7 @@
   },
   "private": false,
   "engines": {
-      "node": ">= 0.8.11"
+      "node": ">=0.10.0 <0.11"
   },
   "license": "MIT",
   "repository": {
@@ -21,6 +21,9 @@
   "bugs": {
     "url": "https://github.com/Mashape/tcpbin/issues",
     "email": "support@mashape.com"
+  },
+  "scripts": {
+    "test": "mocha tests"
   },
   "main": "lib/server.js"
 }
