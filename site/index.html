@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv='content-type' value='text/html;charset=utf8'>
-  <title>tcpbin(1): TCP Client Testing Service</title>
+  <title>tcpbin(1): TCP/UDP Client Testing Service</title>
   <style type='text/css' media='all'>
   /* style: man */
   body#manpage {margin:0}
@@ -61,28 +61,48 @@
 
 
 <div class='mp'>
-<h1>tcpbin(1): TCP Request &amp; Response Service</h1>
+<h1>tcpbin(1): TCP/UDP Request &amp; Response Service</h1>
 <p>Created by <a href="https://www.mashape.com/">Mashape</a></p>
 
 <h2 id="USAGE">FEATURES</h2>
 
 <ul>
-  <li><b>echo:</b> Echoes any request sent to <code>54.175.103.105:4444</code>
-  <li><b>info:</b> Get request info at <code>54.175.103.105:5555</code>
+  <li><b>TCP echo:</b> Echoes any request sent to <code>54.175.103.105:30000</code>
+  <li><b>TCP info:</b> Get request info at <code>54.175.103.105:30001</code>
+</ul>
+<ul>
+  <li><b>UDP echo:</b> Echoes any request sent to <code>54.175.103.105:40000</code>
+  <li><b>UDP info:</b> Get request info at <code>54.175.103.105:40001</code>
 </ul>
 
 <h2 id="DESCRIPTION">DESCRIPTION</h2>
 
-<p>This project has been started to help testing TCP requests in a very easy way. It is very useful for seeing what your clients are sending to TCP servers and debug problems. It can also be used for mock integration tests.</p>
+<p>This project has been started to help testing TCP and UDP requests in a very easy way. It is very useful for seeing what your clients are sending to TCP servers and debug problems. It can also be used for mock integration tests.</p>
 
 <h2 id="EXAMPLES">EXAMPLES</h2>
 
-<h3 id="-echo-sample">$ echo "Text to send" | ncat 54.175.103.105 4444</h3>
+<h3 id="-echo-sample">$ echo "Text to send" | ncat 54.175.103.105 30000</h3>
 
 <pre><code>Text to send
 </code></pre>
 
-<h3 id="-info-sample">$ echo "Get some info" | ncat 54.175.103.105 5555</h3>
+<h3 id="-info-sample">$ echo "Get some info" | ncat 54.175.103.105 30001</h3>
+
+<pre><code>
+{
+  "client-ip": "::ffff:41.130.36.121",
+  "data": [71,101,116,32,115,111,109,101,32,105,110,102,111,10],
+  "text-data": "Get some info\n",
+  "size": 14
+}
+</code></pre>
+
+<h3 id="-echo-sample">$ echo -n "Text to send" | nc -4u -w1 54.175.103.105 40000</h3>
+
+<pre><code>Text to send
+</code></pre>
+
+<h3 id="-info-sample">$ echo -n "Get some info" | nc -4u -w1 54.175.103.105 40001</h3>
 
 <pre><code>
 {
