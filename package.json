@@ -22,5 +22,8 @@
     "url": "https://github.com/Mashape/tcpbin/issues",
     "email": "support@mashape.com"
   },
+  "scripts": {
+    "test": "mocha tests"
+  },
   "main": "lib/server.js"
 }
