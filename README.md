@@ -1,4 +1,5 @@
-# tcpbin(1): TCP/UDP Request & Response Service
+# tcpbin(1): TCP/UDP Request & Response Service [![Build Status](https://travis-ci.org/Mashape/tcpbin.svg)](https://travis-ci.org/Mashape/tcpbin)
+
 Created and maintained by [Mashape](https://www.mashape.com)
 
 # FEATURES
