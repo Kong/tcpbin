@@ -1,0 +1,25 @@
+{
+    "name": "tcpbin",
+    "version": "1.0.0",
+    "description": "A simple TCP server that echoes whatever it receives",
+    "author": "Mashape <support@mashape.com>",
+    "homepage":"http://www.tcpbin.org",
+    "dependencies": {
+        "redis": "0.12.1"
+    },
+    "private": false,
+    "engines": {
+        "node": ">= 0.8.11"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+		"url": "https://github.com/Mashape/tcpbin"
+    },
+    "bugs": {
+		"url": "https://github.com/Mashape/tcpbin/issues",
+		"email": "support@mashape.com"
+    },
+    "main": "lib/server.js"
+}
+
