@@ -7,9 +7,9 @@ Created and maintained by [Mashape](https://www.mashape.com)
 Feature  | Description
 ------------- | -------------
 TCP echo  | Echoes any request sent to **54.175.103.105:30000**
-TCP info  | Content Cell Get request info at **54.175.103.105:30001**
+TCP info  | Get request info at **54.175.103.105:30001**
 UDP echo  | Echoes any request sent to **54.175.103.105:40000**
-UDP info  | Content Cell Get request info at **54.175.103.105:40001**
+UDP info  | Get request info at **54.175.103.105:40001**
 
 # DESCRIPTION
 
