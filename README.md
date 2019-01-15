@@ -1,6 +1,6 @@
-# tcpbin(1): TCP/UDP Request & Response Service [![Build Status](https://travis-ci.org/Mashape/tcpbin.svg)](https://travis-ci.org/Mashape/tcpbin)
+# tcpbin(1): TCP/UDP Request & Response Service [![Build Status](https://travis-ci.org/Kong/tcpbin.svg)](https://travis-ci.org/Kong/tcpbin)
 
-Created and maintained by [Mashape](https://www.mashape.com)
+Created and maintained by [Kong](https://konghq.com)
 
 # FEATURES
 
@@ -53,7 +53,7 @@ Text to send to UDP
 
 # AUTHOR
 
-A [Mashape](https://www.mashape.com) project.
+A [Kong](https://konghq.com) project.
 
 # SEE ALSO
 
@@ -61,4 +61,4 @@ A [Mashape](https://www.mashape.com) project.
 
 [Apiembed.com](https://www.apiembed.com/) - Embeddable API Code snippets
 
-[Mashape.com](https://www.mashape.com/) - Largest API Marketplace And Powerful Tools For Private And Public APIs
+[Konghq.com](https://konghq.com/) - The Cloud-Native API Gateway & Service Mesh
