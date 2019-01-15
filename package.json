@@ -1,29 +1,29 @@
 {
   "name": "tcpbin",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A simple TCP server that echoes whatever it receives",
-  "author": "Mashape <support@mashape.com>",
+  "author": "Kong <support@konghq.com>",
   "homepage":"http://www.tcpbin.org",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "~1.13.0",
-    "should": "~4.3.1"
+    "mocha": "~5.2.0",
+    "should": "~13.2.3"
   },
   "private": false,
   "engines": {
-      "node": ">=0.10.0 <0.11"
+      "node": ">=0.10.0"
   },
   "license": "MIT",
   "repository": {
       "type": "git",
-    "url": "https://github.com/Mashape/tcpbin"
+    "url": "https://github.com/Kong/tcpbin"
   },
   "bugs": {
-    "url": "https://github.com/Mashape/tcpbin/issues",
-    "email": "support@mashape.com"
+    "url": "https://github.com/Kong/tcpbin/issues",
+    "email": "support@konghq.com"
   },
   "scripts": {
-    "test": "mocha tests"
+    "test": "mocha tests --exit"
   },
   "main": "lib/server.js"
 }
