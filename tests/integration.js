@@ -23,7 +23,7 @@ describe('Tcpbin', function () {
         client.write('TCP info test');
       });
       client.on('data', function(data) {
-        should(data.toString()).equal('{"client-ip":"::ffff:127.0.0.1","data":{"type":"Buffer","data":[84,67,80,32,105,110,102,111,32,116,101,115,116]},"text-data":"TCP info test","size":13}');
+        should(data.toString()).equal('{"client-ip":"::ffff:127.0.0.1","data":[84,67,80,32,105,110,102,111,32,116,101,115,116],"text-data":"TCP info test","size":13}');
         done();
       });
     });
@@ -47,7 +47,7 @@ describe('Tcpbin', function () {
     it('should get info', function (done) {
       var client = dgram.createSocket('udp4');
       client.on('message', function(message, remote) {
-        should(message.toString()).equal('{"client-ip":"127.0.0.1","data":{"type":"Buffer","data":[85,68,80,32,105,110,102,111,32,116,101,115,116]},"text-data":"UDP info test","size":13}');
+        should(message.toString()).equal('{"client-ip":"127.0.0.1","data":[85,68,80,32,105,110,102,111,32,116,101,115,116],"text-data":"UDP info test","size":13}');
         done();
       });
       var message = new Buffer.from('UDP info test');
