@@ -1,5 +1,5 @@
 FROM node:slim
-LABEL maintainer="Narate Ketram <koonnarate@gmail.com>"
+LABEL maintainer="Narate Ketram <rate@dome.cloud>"
 WORKDIR /app
 ADD . .
 RUN npm install
