@@ -1,0 +1,12 @@
+version: '3'
+services:
+  tcpbin:
+    build: .
+    restart: always
+    container_name: tcpbin
+    ports:
+      - 30000:30000/tcp
+      - 30001:30001/tcp
+      - 40000:40000/udp
+      - 40001:40001/udp
+
